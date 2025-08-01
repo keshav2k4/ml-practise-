@@ -1,9 +1,9 @@
 import numpy as np 
 from sklearn.tree import DecisionTreeClassifier 
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import accuracy_score
 
-#load the dataset
+#load the datasetgig
 data = np.genfromtxt('/Users/keshavpurohit/Desktop/keshav/keshav /data sceince practise/practise 1/custmores.csv', delimiter=',', skip_header=1)
 X = data[:, [0, 1]]  # Assuming 'Age' is in column 0 and 'Salary' is in column 1
 y = data[:, 2]  # Assuming 'Purchased' is in column 2       
